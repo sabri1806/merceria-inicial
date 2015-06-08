@@ -15,10 +15,10 @@ public class AdminArticuloTest {
 	public void obtenerArt_articuloPorId_retornaArt() {
 		ArticuloService articuloService = new ArticuloService();
 
-		long id = 1;
+		Long id = new Long(1);
 		Articulo articulo = articuloService.obtenerArt(id);
 
-		assertEquals(1L,articulo.getId());
+		assertEquals(id,articulo.getId());
 	}
 
 	// aca hace el test de borrado
